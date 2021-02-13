@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Montaga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+html,
+body {
+    height: 100%;
+}
+
+* {
+    font-family: "Montaga", serif;
+}
+
+* { box-sizing: border-box }
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+}
+/* Slideshow container */
+#slideshow-container {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.mySlides {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0;
+    transform: scale(1);
+    transition: all .9s east-out;
+}
+
+/* makes last image fade */
+.mySlides:nth-last-child(2){
+    opacity: 1;
+    transform: scale(1.08);
+}
