@@ -3,28 +3,22 @@
 
 html,
 body {
-    height: 100%;
+    margin: 0
 }
 
-* {
-    font-family: "Montaga", serif;
-}
+* { font-family: "Montaga", serif }
 
 * { box-sizing: border-box }
-
-main {
-    display: flex;
-    flex-direction: column;
-}
 
 .title {
     text-align: center;
 }
 /* Slideshow container */
 #slideshow-container {
+    flex: 1;
     position: relative;
-    height: 80vh;
     overflow: hidden;
+    height: 80vh;
 }
 
 .mySlides {
@@ -38,7 +32,7 @@ main {
     background-size: cover;
     opacity: 0;
     transform: scale(1);
-    transition: all .9s east-out;
+    transition: all .9s ease-out;
 }
 
 /* makes last image fade */
