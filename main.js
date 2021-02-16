@@ -1,15 +1,14 @@
-//const response = await fetch(`https://dog.ceo/api/breed/beagle/images`)
-//const response = await fetch(`https://dog.ceo/api/breeds/list/all`)
-
 let timer
 let deleteFirstPhotoDelay
 
 async function loadImages() {
     try {
+        //const response = await fetch(`http://localhost:4000/flowers/0`)
         const response = await fetch(`https://dog.ceo/api/breed/beagle/images`)
         const data = await response.json()
+        //showSlides(data.url)
+        //console.log(data.url)
         showSlides(data.message)
-        //console.log(data.mesage)
     } catch(e) {
         console.log("Issue loading images", e)
     }
